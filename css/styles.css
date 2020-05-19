@@ -4,7 +4,7 @@
 
 header {
     border-bottom: 1px solid #ccc;
-    padding: 5px;
+    padding-top: 3px; /* TODO: corrigir altura da logo e remover esse padding*/
 }
 
 body {
@@ -15,18 +15,11 @@ body {
 
 .container {
     margin: 0 auto;
-    width: 1700px;
+    width: 90%;
 }
 
 #planos {
-    padding: 60px;
-}
-
-article {
-    border: 1px solid #c3c3c3;
-    float: left;
-    margin-right: 320px;
-    width: 350px;
+    padding: 2% 0;
 }
 
 #planos::after {
@@ -35,8 +28,22 @@ article {
     clear: both;
 }
 
+article {
+    border: 1px solid #c3c3c3;
+}
+
+@media (min-width: 800px) {
+    /* TODO: corrigir padding-bottom do botao assinar */ 
+    article {
+        float: left;
+        margin-right: 5%;
+        padding-bottom: 1%;
+        width: 30%; /* TODO: diminuir para 25% causa problema, corrigir */
+    }
+}
+
 article > h2 {
-    background-color: #d3d3d3;
+    background-color: #b3b3b3;
     font-size: 24px;
     color: #f2f2f2;
     font-weight: bold;
@@ -61,12 +68,26 @@ article > ul > li {
     text-align: center;
 }
 
-.assinar-plano {
+article > footer {
     text-align: center;
+}
+
+.botao-assinar {
+    background-color: #469e5e;
+    border-radius: 5px;
+    display: inline-block;
     font-size: 16px;
-    margin: 20px auto;
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+}
+
+.botao-assinar:hover, .botao-assinar:focus {
+    background-color: #346e43;
 }
 
 h3 {
+    border-top: 1px solid #ccc;
+    padding-top: 3px;
     text-align: center;
 }
