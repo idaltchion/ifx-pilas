@@ -5,12 +5,14 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/componentes.css">
 	<title>ifX-Pilas</title>
 </head>
 
 <body>
-	<header>
+	<header class="layout-cabecalho">
 		<div class="container">
 			<img src="images/logo.png" alt="ifX Pilas logo">
 		</div>
@@ -34,62 +36,56 @@
 			iusto, fuga consequuntur tempore soluta? Ipsa nostrum perferendis modi eligendi at deserunt maxime?
 			Voluptas, architecto!</p>
 	</div>
-	<div id="planos">
+	<div id="planos" class="layout-planos">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-4">
-					<article>
-						<h2>Autônomo</h2>
-						<div class="preco">
-							R$59/mês
-						</div>
-						<ul>
+					<article class="plano">
+						<h2 class="plano__cabecalho">Autônomo</h2>
+						<div class="plano__preco">R$59/mês</div>
+						<ul class="plano__caracteristicas">
 							<li>Até <strong>2 usuários</strong></li>
 							<li><strong>500MB</strong> de armazenamento</li>
 							<li>Lançamentos ilimitados</li>
 							<li>Acesso seguro</li>
 							<li>Sem fidelidade</li>
 						</ul>
-						<footer>
-							<a href="#" target="_blank" class="botao-assinar">Assinar</a>
+						<footer class="plano__rodape">
+							<a href="#" target="_blank" class="botao botao--assinar">Assinar</a>
 						</footer>
 					</article>
 				</div>
 
 				<div class="col-lg-4">
-					<article>
-						<h2>Micro</h2>
-						<div class="preco">
-							R$89/mês
-						</div>
-						<ul>
+					<article class="plano">
+						<h2 class="plano__cabecalho">Micro</h2>
+						<div class="plano__preco">R$89/mês</div>
+						<ul class="plano__caracteristicas">
 							<li>Até <strong>5 usuários</strong></li>
 							<li><strong>1GB</strong> de armazenamento</li>
 							<li>Lançamentos ilimitados</li>
 							<li>Acesso seguro</li>
 							<li>Sem fidelidade</li>
 						</ul>
-						<footer>
-							<a href="#" target="_blank" class="botao-assinar">Assinar</a>
+						<footer class="plano__rodape">
+							<a href="#" target="_blank" class="botao botao--assinar">Assinar</a>
 						</footer>
 					</article>
 				</div>
 
 				<div class="col-lg-4">
-					<article>
-						<h2>Pequena</h2>
-						<div class="preco">
-							R$99/mês
-						</div>
-						<ul>
+					<article class="plano">
+						<h2 class="plano__cabecalho">Pequena</h2>
+						<div class="plano__preco">R$99/mês</div>
+						<ul class="plano__caracteristicas">
 							<li>Até <strong>10 usuários</strong></li>
 							<li><strong>5GB</strong> de armazenamento</li>
 							<li>Lançamentos ilimitados</li>
 							<li>Acesso seguro</li>
 							<li>Sem fidelidade</li>
 						</ul>
-						<footer>
-							<a href="#" target="_blank" class="botao-assinar">Assinar</a>
+						<footer class="plano__rodape">
+							<a href="#" target="_blank" class="botao botao--assinar">Assinar</a>
 						</footer>
 					</article>
 				</div>
@@ -98,7 +94,7 @@
 	</div>
 
 	<footer>
-		<h3>Todos os direitos reservados</h3>
+		<h3 class="layout-rodape">Todos os direitos reservados</h3>
 	</footer>
 </body>
 

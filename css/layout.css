@@ -1,0 +1,14 @@
+.layout-cabecalho {
+    border-bottom: 1px solid #ccc;
+    padding-top: 3px; /* TODO: corrigir altura da logo e remover esse padding*/
+}
+
+.layout-planos {
+    padding: 2% 0;
+}
+
+.layout-rodape {
+    border-top: 1px solid #ccc;
+    padding-top: 3px;
+    text-align: center;
+}
