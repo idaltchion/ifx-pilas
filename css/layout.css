@@ -3,6 +3,13 @@
     padding-top: 3px; /* TODO: corrigir altura da logo e remover esse padding*/
 }
 
+.layout-chamada {   
+
+    padding: 100px 0;
+
+    background-color: #469e5e;
+}
+
 .layout-planos {
     padding: 2% 0;
 }
