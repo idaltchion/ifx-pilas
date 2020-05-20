@@ -1,6 +1,7 @@
 /* --------------- *\
     CHAMADA           
 \* --------------- */
+
 .chamada {
     font-size: 1.6rem; /* 1.6 * 10px = 16px */
     text-align: center;
@@ -23,32 +24,6 @@
 .chamada__acao {
     font-size: 1em;
 }
-
-@media(max-width: 992px) {
-    .chamada__titulo {
-        padding-left: 10%;
-        padding-right: 10%;
-        font-size: 6rem; /* 60px / 10px = 6*/
-    }
-
-    .chamada__subtitulo {
-        font-size: 1.8rem; /* 18px / 10px = 1.8*/
-    }
-}
-
-@media(max-width: 768px) {
-    .chamada__titulo {
-        padding-left: 8%;
-        padding-right: 8%;
-        font-size: 4rem; /* 40px / 10px = 4*/
-    }
-
-    .chamada__subtitulo {
-        font-size: 1.2rem; /* 40px / 10px = 4*/
-    }
-}
-
-
 
 
 /* --------------- *\
@@ -130,4 +105,80 @@
 
 .botao--conhecer-planos:hover, .botao--conhecer-planos:focus {
     background-color: #223475;
+}
+
+
+/* --------------- *\
+    DEPOIMENTO
+\* --------------- */
+
+.depoimento {
+    text-align: center;
+
+    font-size: 1.625rem; /* 26px / 16px */
+}
+
+.depoimento__frase {
+    margin: 0;
+    padding: 2% 15%;
+
+    font-size: 1.875em;
+    color: #333;
+}
+
+.depoimento__foto-autor {
+    margin-top: 20px;
+
+    border-radius: 50%;
+}
+
+.depoimento__nome-autor {
+    margin-top: 2px;
+
+    color: #333;
+}
+
+/* --------------- *\
+    RESPONSIVIDADE
+\* --------------- */
+
+@media(max-width: 992px) {
+    .chamada__titulo {
+        padding-left: 10%;
+        padding-right: 10%;
+        font-size: 6rem; /* 60px / 10px = 6*/
+    }
+
+    .chamada__subtitulo {
+        font-size: 1.8rem; /* 18px / 10px = 1.8*/
+    }
+
+    .depoimento__frase {
+        padding: 2% 11%;
+        font-size: 1.6rem;
+    }
+
+    .depoimento__nome-autor {
+        font-size: 1rem;
+    }
+}
+
+@media(max-width: 768px) {
+    .chamada__titulo {
+        padding-left: 8%;
+        padding-right: 8%;
+        font-size: 4rem; /* 40px / 10px = 4*/
+    }
+
+    .chamada__subtitulo {
+        font-size: 1.2rem; /* 40px / 10px = 4*/
+    }
+
+    .depoimento__frase {
+        font-size: 1.4rem;
+    }
+
+    .depoimento__nome-autor {
+        font-size: 1rem;
+    }
 }
