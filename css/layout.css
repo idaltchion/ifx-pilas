@@ -1,6 +1,7 @@
 .layout-cabecalho {
-    border-bottom: 1px solid #ccc;
     padding-top: 3px; /* TODO: corrigir altura da logo e remover esse padding*/
+    
+    border-bottom: 1px solid #ccc;
 }
 
 .layout-chamada {   
@@ -20,7 +21,9 @@
 }
 
 .layout-rodape {
+    padding: 10px 0;
+    
+    background-color: #595959;
+    
     border-top: 1px solid #ccc;
-    padding-top: 3px;
-    text-align: center;
 }

@@ -27,6 +27,37 @@
 
 
 /* --------------- *\
+    DEPOIMENTO
+\* --------------- */
+
+.depoimento {
+    text-align: center;
+
+    font-size: 1.625rem; /* 26px / 16px */
+}
+
+.depoimento__frase {
+    margin: 0;
+    padding: 2% 15%;
+
+    font-size: 1.875em;
+    color: #333;
+}
+
+.depoimento__foto-autor {
+    margin-top: 20px;
+
+    border-radius: 50%;
+}
+
+.depoimento__nome-autor {
+    margin-top: 2px;
+
+    color: #333;
+}
+
+
+/* --------------- *\
     PLANOS           
 \* --------------- */
 
@@ -76,6 +107,17 @@
 
 
 /* --------------- *\
+    RODAPE
+\* --------------- */
+
+.rodape {
+    color: #fff;
+
+    text-align: center;
+}
+
+
+/* --------------- *\
     BOTAO
 \* --------------- */
 
@@ -107,36 +149,6 @@
     background-color: #223475;
 }
 
-
-/* --------------- *\
-    DEPOIMENTO
-\* --------------- */
-
-.depoimento {
-    text-align: center;
-
-    font-size: 1.625rem; /* 26px / 16px */
-}
-
-.depoimento__frase {
-    margin: 0;
-    padding: 2% 15%;
-
-    font-size: 1.875em;
-    color: #333;
-}
-
-.depoimento__foto-autor {
-    margin-top: 20px;
-
-    border-radius: 50%;
-}
-
-.depoimento__nome-autor {
-    margin-top: 2px;
-
-    color: #333;
-}
 
 /* --------------- *\
     RESPONSIVIDADE
