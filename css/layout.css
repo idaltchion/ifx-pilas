@@ -1,12 +1,20 @@
 .layout-cabecalho {
-    padding-top: 3px; /* TODO: corrigir altura da logo e remover esse padding*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 60px;
+    z-index: 9999;
     
+    padding-top: 7px; /* TODO: corrigir altura da logo e remover esse padding*/
     border-bottom: 1px solid #ccc;
+
+    background-color: #fff;
 }
 
 .layout-chamada {   
     padding: 80px 0;
-
+    margin-top: 60px;
     background-color: #469e5e;
 }
 
