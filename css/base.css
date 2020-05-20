@@ -1,5 +1,16 @@
+html {
+    /* --------------- *\
+    * Definicao de tamanho padrao de fonte utilizada no projeto
+    * 0.625 = 10% de 16px (tamanho 'medio' da fonte no browser)
+    * utilizado para facilitar as contas no restante do site e utilizar fontes relativas (em/rem) para mante-las responsivas;
+    * manter a possibilidade do usuario definir a fonte desejada no browser;
+    * acessibilidade.
+    \* --------------- */
+    font-size: 62.5%;
+}
+
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 1.4em;
 }
