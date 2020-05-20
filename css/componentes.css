@@ -62,6 +62,8 @@
 \* --------------- */
 
 .plano {
+    position: relative;
+
     border: 1px solid #c3c3c3;
     font-size: 1.4rem;
 }
@@ -70,8 +72,8 @@
     /* Posicionamento */
 
     /* Display e Box Model */
-    margin: 0;
     padding: 10px;
+    margin: 0;
 
     /* Cores */
     background-color: #b3b3b3;
@@ -105,6 +107,21 @@
     padding: 10px 0;
 }
 
+.plano--mais-popular::before {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    
+    padding: 0 10px;
+
+    font-size: 0.8571em;
+    line-height: 2;
+
+    background-color: #a3180b;
+    color: #fff;
+    
+    content: "MAIS POPULAR"
+}
 
 /* --------------- *\
     RODAPE
