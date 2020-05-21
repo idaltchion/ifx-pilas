@@ -196,3 +196,32 @@
 .botao--conhecer-planos:hover, .botao--conhecer-planos:focus {
     background-color: #223475;
 }
+
+/* --------------- *\
+    NAVEGACAO
+\* --------------- */
+
+.navegacao__menu {
+    float: right;
+}
+
+/* --------------- *\
+    BOTAO-CHAVEADOR
+\* --------------- */
+
+.botao-chaveador {
+    width: 24px;
+    height: 24px;
+
+    background: none;
+    border: 0;
+    background-image: url("../images/bars.png");
+
+    outline: none;
+}
+
+@media (min-width: 992px) {
+    .botao-chaveador {
+        display: none;
+    }
+}
