@@ -3,26 +3,39 @@
 \* --------------- */
 
 .chamada {
-    font-size: 1.6rem; /* 1.6 * 10px = 16px */
+    font-size: 1.4rem; /* 1.4 * 10px = 14px */
     text-align: center;
 }
 
-.chamada__titulo {
-    color: #fff;
-    
-    font-size: 6em; /* 80px / 16px */
-    line-height: 1;    
+@media(min-width: 992px) {
+    .chamada {
+        padding-right: 15%;
+        padding-left: 15%;
+
+        font-size: 3rem;
+    }
 }
+
+.chamada__titulo {
+    font-size: 2.5714em; /* 36px / 14px */
+    line-height: 1;
+
+    color: #fff;
+}
+
 
 .chamada__subtitulo {
     padding-bottom: 30px;
-    color: #f2f2f2;
+    padding-left: 10%;
+    padding-right: 10%;
 
-    font-size: 1.75em; /* 28px / 16px */
+    font-size: 1.1428em;
+
+    color: #f2f2f2;
 }
 
 .chamada__acao {
-    font-size: 1em;
+    font-size: 0.7142em;
 }
 
 
@@ -31,17 +44,33 @@
 \* --------------- */
 
 .depoimento {
-    text-align: center;
+    font-size: 1.6rem;
+}
 
-    font-size: 1.625rem; /* 26px / 16px */
+@media (min-width: 992px) {
+    .depoimento {
+        font-size: 3rem;
+    }
 }
 
 .depoimento__frase {
+    position: relative;
     margin: 0;
-    padding: 2% 15%;
+    padding: 0 8%;
+    font-size: 1em;
+}
 
-    font-size: 1.875em;
-    color: #333;
+
+.depoimento__frase::before {
+    position: absolute;
+    left: 0; 
+    top: -0.3em;
+    
+    font-size: 5em;
+    
+    color: #595959;
+
+    content: "\201C";
 }
 
 .depoimento__foto-autor {
@@ -52,6 +81,8 @@
 
 .depoimento__nome-autor {
     margin-top: 2px;
+
+    font-size: 0.75em; /* 14px / 16px */
 
     color: #333;
 }
@@ -164,50 +195,4 @@
 
 .botao--conhecer-planos:hover, .botao--conhecer-planos:focus {
     background-color: #223475;
-}
-
-
-/* --------------- *\
-    RESPONSIVIDADE
-\* --------------- */
-
-@media(max-width: 992px) {
-    .chamada__titulo {
-        padding-left: 10%;
-        padding-right: 10%;
-        font-size: 6rem; /* 60px / 10px = 6*/
-    }
-
-    .chamada__subtitulo {
-        font-size: 1.8rem; /* 18px / 10px = 1.8*/
-    }
-
-    .depoimento__frase {
-        padding: 2% 11%;
-        font-size: 1.6rem;
-    }
-
-    .depoimento__nome-autor {
-        font-size: 1rem;
-    }
-}
-
-@media(max-width: 768px) {
-    .chamada__titulo {
-        padding-left: 8%;
-        padding-right: 8%;
-        font-size: 4rem; /* 40px / 10px = 4*/
-    }
-
-    .chamada__subtitulo {
-        font-size: 1.2rem; /* 40px / 10px = 4*/
-    }
-
-    .depoimento__frase {
-        font-size: 1.4rem;
-    }
-
-    .depoimento__nome-autor {
-        font-size: 1rem;
-    }
 }
