@@ -4,10 +4,10 @@
     right: 0;
     left: 0;
     height: 60px;
+    padding: 7px 0;
     line-height: 40px;
     z-index: 9999;
 
-    padding-top: 7px; /* TODO: corrigir altura da logo e remover esse padding*/
     border-bottom: 1px solid #ccc;
 
     background-color: #fff;
