@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/base.css">
+	<link rel="stylesheet" href="css/layout.css">
+	<link rel="stylesheet" href="css/componentes.css">
+	<title>ifXPilas</title>
+</head>
+
+<body>
+	<header class="layout-cabecalho">
+		<div class="container">
+			<nav class="navegacao navegacao--assinatura">
+				<a href="index.html"><img src="images/logo.png" alt="ifX Pilas logo"></a>
+			</nav>
+		</div>
+	</header>
+
+	<main class="layout-assinatura">
+		<div class="container">
+
+			<form action="#" method="post" class="formulario">
+				<h1 class="formulario__titulo">Sua assinatura do ifXPilas</h1>
+				
+				<div class="formulario__campo">
+					<label for="razao-social">Razão Social</label>
+					<input type="text" id="razao-social" name="razao-social" required>
+				</div>
+
+				<div class="row">
+					<div class="col-md-3">
+						<div class="formulario__campo">
+							<label for="cnpj">CNPJ</label>
+							<input id="cnpj" type="text" name="cnpj" required>
+						</div>
+					</div>
+					<div class="col-md-3">
+						<div class="formulario__campo">
+							<label for="data-fundacao">Data de Fundação</label>
+							<input id="data-fundacao" type="date" name="data-fundacao">
+						</div>
+					</div>
+				</div>
+
+				<div class="formulario__campo">
+					<label for="responsavel">Responsável</label>
+					<input id="responsavel" type="text" name="responsavel" required>
+				</div>
+				
+				<div class="formulario__campo">
+					<label for="email">E-mail</label>
+					<input id="email" type="email" name="e-mail" required>
+				</div>
+
+				<div class="row">
+					<div class="col-md-4">
+						<div class="formulario__campo">
+							<label for="estado">Estado</label>
+								<select id="estado" name="estado" required>
+									<option value="">Selecione um Estado</option>
+									<option value="RJ">Rio de Janeiro</option>
+									<option value="SP">Sao Paulo</option>
+									<option value="PR">Parana</option>
+								</select>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="formulario__campo">
+							<label for="cidade">Cidade</label>
+							<select id="cidade" name="cidade" required>
+								<option value="">Selecione uma Cidade</option>
+								<option value="1">Rio de Janeiro</option>
+								<option value="2">São Paulo</option>
+								<option value="3">Curitiba</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-4">
+						<div class="formulario__campo">
+							<label for="senha">Senha</label>
+							<input id="senha" type="password" name="senha" required>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="formulario__campo">
+							<label for="confirmacao-senha">Confirme sua Senha</label>
+							<input id="confirmacao-senha" type="password" name="confirmacao-senha" required>
+						</div>
+					</div>
+				</div>
+
+				<div class=formulario__botao>
+					<input type="submit" value="Assinar Plano" class="botao botao--conhecer-planos">
+				</div>
+
+			</form>
+
+		</div>
+	</main>
+
+	<footer class="layout-rodape">
+		<div class="container">
+			<div class="rodape">
+				<p>2020 &copy;ifXPilas. Todos os direitos reservados.</p>
+			</div>
+		</div>
+	</footer>
+
+</body>
+
+</html>
